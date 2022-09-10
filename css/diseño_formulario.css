@@ -1,0 +1,41 @@
+
+/*encabezado de la pagina*/
+#titulo{
+    width: 100%;
+    align-content: center;
+    position:relative;
+    top:10%;
+}
+#encabezado{
+width:60%;
+display:block;
+margin: 5% 0% 5% 0%;
+}
+/*boton */
+#boton{
+    background-color: rgb(93, 167, 216);
+    font-style: italic;
+    position:relative;
+    height: 30%;
+    font-weight: bold;
+    width: 5%;
+    display: flex;
+    margin-top:3%;
+    margin-bottom: 10%;
+}
+#boton a{
+align-items: center;
+color:white;
+align-content: center;
+margin-left:2%;
+font-size:1.4em
+}
+a visited a hover{
+    background-color: blue;
+}
+/*diseño de la tabla*/
+#valores{
+left:40%;
+display: inline-block;
+margin: 0 auto;
+}

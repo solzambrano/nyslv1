@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="../CSS/diseño.css">
+        <title>registration</title>
+    </head>
+    <body>
+        <header>
+            <h1>Nortshide Youth Soccer League </h1>
+            <div class="fondo">
+                <img class="imagen" src="../IMAGENES/soccer_image2.jpg" alt="niña jugando">
+                <img src= "../IMAGENES/soccer_image1.jpg" alt="niño jugando">
+                <img src="../IMAGENES/soccer_image3.jpg" alt="niños jugando">
+                <img src= "../IMAGENES/soccer_image1.jpg" alt="niño jugando">    
+                <img class="imagen" src="../IMAGENES/soccer_image2.jpg" alt="niña jugando">
+            </div>    
+        </header>
+        <div class ="cinta">
+            <h2>Registration</h2>
+            <img class = "logo" src="../IMAGENES/nysl_logo.png" alt="logo_pelota">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a  href ="about.html">About</a>
+            <a  href="contact.html">Contact</a>
+            <a  href ="gameInformation.html">Game Information</a>
+            <a  href="rules.html"  >Rules</a>
+            <a href="registration.html">Registration</a>
+        </nav>
+        <section>
+            <form action="show_data.html" method="get" target="blank">
+            <fieldset>
+                <legend>Informacion Personal</legend>
+                    <label>Player´s First Name
+                        <input type="text" name="First Name">
+                    </label>
+                    <label>Last Name
+                        <input type="text" name="Last Name">
+                    </label>
+                    <label class="separado">Street Address
+                        <input type="text" name="Street Address">
+                    </label>
+                    <div class="separado">
+                        <label >City
+                            <input type="text" name="City">
+                        </label>
+                        <label>Zip Code
+                            <input type="text" name="Zip Code">
+                        </label>
+                    </div>
+                    <div class="separado">
+                        <label>Birth Date
+                            <input type="date" name=" Birth Date">
+                        </label>
+                        Gender:
+                        <label>Female
+                            <input type="radio" name ="gender" value="Female">
+                        </label>
+                        <label>Male
+                            <input type="radio" name="gender"value="male">
+                        </label>
+                    </div>
+                    <div class="separado">
+                    Grade:
+                    <label>Pre-School
+                        <input type="radio" name="grade" value="school">
+                    </label>
+                    <label><sup>1st</sup>
+                        <input type="radio" name="grade" value="1st">
+                    </label>
+                    <label><sup>2st</sup>
+                        <input type="radio" name="grade" value="2st">
+                    </label>
+                    <label><sup>3st</sup>
+                        <input type="radio" name="grade" value="3st">
+                    </label>
+                    <label><sup>4st</sup>
+                        <input type="radio" name="grade" value="4st">
+                    </label>
+                    <label><sup>5st</sup>
+                        <input type="radio" name="grade" value="5st">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                    <legend>Play</legend>
+                        <p>Wich elementary scholl do you live near</p>
+                       <p> Closest school </p>
+                      
+                        <div class="encolumnarizq">
+                            <label>
+                                <input type="radio"  name="school" value="AJ Katzenmaier">AJ Katzenmaier
+                            </label>
+                            <label>
+                                <input type="radio" name="school" value="Greenbay">Greenbay
+                            </label>
+                            <label>
+                                <input type="radio" name="school" value="Howard A Yeager">Howard A Yeager
+                            </label>
+                        </div>
+                        <div class="encolumnarder">
+                            <label>
+                                <input type="radio" name="school" value="Marjorie P Hart">Marjorie P Hart
+                            </label>
+                            <label>
+                                <input type="radio" name="school" value="North Elementary">North Elementary
+                             </label>
+                            <label>
+                                <input type="radio" name="school" value="South elementary">South elementary
+                            </label>
+                        </div>
+                  <p>What position(s) do you normally play? (check all that apply) </p>
+                <div class="encolumnarizq">
+                  <label>
+                      <input type="radio" name="position" value="Forward">Forward
+                  </label>
+                  <label>
+                      <input type="radio" name="position" value="Defense">Defense
+                  </label>
+                 
+                </div>
+                <div id="espacio2" class="encolumnarder">
+                  <label>
+                      <input type="radio" name="position" value="Midfield">Midfield
+                  </label>
+                  <label>
+                      <input type="radio" name="position" value="Goalkeeper">Goalkeeper
+                  </label>
+                </div>
+                <p>Uniform Size</p>
+                <div class="encolumnarizq">
+                  <label>
+                      <input type="radio" name="uniform" value="Youth Smal">Youth Small
+                  </label>
+                  <label>
+                      <input type="radio" name="uniform" value="Youth Medium">Youth Medium
+                  </label>
+                  <label>
+                      <input type="radio" name="uniform" value="Youth Large">Youth Large
+                  </label>
+                  <label>
+                    <input type="radio" name="uniform" value="Small">Small
+                </label>
+                  </div>
+                  <div id="espacio" class="encolumnarder">
+                  <label>
+                      <input type="radio" name="uniform" value="Medium">Medium
+                  </label>
+                  <label>
+                      <input type="radio" name="uniform" value="Large">Large
+                  </label>
+                  <label>
+                      <input type="radio" name="uniform" value="Extra-Large">Extra-Large
+                  </label>
+                  </div>
+            </fieldset>
+            <br>
+            <div class="permision">
+                 <p>Permission to Play</p>
+                 <p>By signing below,I herebyagree andauthorizethe above. In addition, by signing below, I also
+                      acknowledge that I have read the cancellation policy and agree to its items</p>
+                 <div class="separar">
+                    <label>Parent/Guardian/Signature
+                      <input type="text" name="permision"> 
+                    </label>
+                    <label>Date
+                     <input type="date" name="date"> 
+                    </label>  
+                  </div>
+                </div>
+                  <label>
+                    <input class="boton" type="submit" value="Enviar Informacion">
+                  </label>
+                  <label>
+                    <input class="boton" type="reset" value="Reiniciar" >
+                  </label>        
+        </form>
+         </section>
+    </body>
+</html>
+               
