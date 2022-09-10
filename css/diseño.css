@@ -1,0 +1,206 @@
+body, html{
+    max-width: 100%;
+    margin :0 auto;
+}
+/*cabecera de las paginas*/
+.fondo{
+    opacity:38.9%;
+}
+header{
+    text-align:center;
+    position:relative;
+    width:100%;
+}
+/*para las imagenes que tienen una resolucion menor*/
+.imagen{
+width: 19%;
+height: 17%;
+}
+/*imagenes en general*/
+img{
+        border: 2px solid transparent;
+        padding: 4px;
+        width: 15%;
+        margin:0,auto;
+}
+h1{
+font-size :3em;
+color: rgb(7, 6, 6);
+position:absolute;
+top:9%;
+left:13%;
+text-align: center;
+margin:0 auto;
+
+}
+.cinta {
+    width:100%;
+    height: 10%;
+    background-color: black;
+    text-align:center;
+}
+h2{
+    color:white;
+}
+.logo{
+    width:70px;
+    height: 70px;
+    float: right;
+    bottom:75px;
+    position:relative;
+
+}
+/*enlaces*/
+nav{
+    display:inline-flex;
+    flex-direction:column;
+    line-height: 4;
+    width: 20%;
+    position:relative;
+    margin :0 auto;
+    left:10px ;
+    background-color: rgb(245, 247, 247);
+    text-align: center;
+  
+    }
+a{
+    text-decoration:none;
+    color:blueviolet;
+    font-size: large;
+}
+a:visited{
+    border-color: purple;
+}
+a:hover{
+    text-decoration:underline;
+    background-color: rgb(205, 241, 229);
+}
+/*secciones de las distintas paginas*/
+section{
+    flex-direction:column;
+    display:inline-flex;
+    align-items: flex-start;
+    position:relative;
+    width: 70%;  
+    left:30px;
+    margin:0 auto;
+    background-color: rgb(245, 247, 247)
+}
+p{
+    text-indent:2cm;
+    display:inline;
+}
+/*game information*/
+table{
+    border-spacing: 9px;
+    border-style: dotted;
+    position: relative;
+    left: 5%
+}
+td{
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+.separar{
+    display:flex;
+    justify-content: space-between;
+    padding-top:10px;
+}
+.separar p{
+    margin:0px 15px 0px 30px;
+}
+iframe{
+    height:80%;
+    width: 60%;
+}
+footer{
+    margin:0 auto;
+    padding: 10% 0% 10% 0%;
+}
+/*revisar el siguiente, no es el diseño que se busca*/
+
+/*rules*/
+.alfabeto li{
+    list-style-type:lower-latin ;
+}
+.estilo_distinto {
+    list-style-type:square;
+}
+.circulo{
+list-style-type: circle;
+position:relative;
+left:2%;
+word-wrap: break-word;
+}
+.rules{
+    text-indent: 0%;
+    font-weight: bold;
+    margin:0;
+    text-overflow: ellipsis;
+}
+/*registration*/
+.separado{
+    display:block;
+    margin: 10px 0px 10px 0px;
+    padding:10px 0px 10px 0px;
+}
+input{
+    border:none;
+    border-bottom: 1px solid;
+}
+label{
+   margin-left:20px;
+}
+fieldset{
+    width:80%;
+}
+.encolumnarizq{
+    display:flex;
+    flex-direction: column; 
+    position:relative;
+    width: 40%;
+    justify-content: flex-start; 
+    bottom:-10px;
+    line-height: 2%;
+ }
+ .encolumnarder{
+    display:flex;
+    position:relative;
+    flex-direction: column;
+    left:40%;
+    width:40%;
+    bottom:35px;
+    line-height: 2%;
+ }
+ form{
+     position:relative;
+     left:5%
+ }
+ /*problema de espacio distinto debido a distintas cantidades de columnas*/
+ #espacio{
+position: relative;
+bottom:54px;
+ }
+ #espacio2{
+position:relative;
+bottom:20px;
+ }
+ .boton{
+     display:inline-block;
+     margin:6% 15% 6% 10%;
+     background-color: rgb(184, 238, 235);
+     font-size: 85%;
+     width: 20%;
+     border-style: none;
+     font-style: oblique;
+     font-weight: bold;
+ }
+ .relleno{
+     visibility:hidden;
+ }
+ .permision{
+     position:relative;
+     left:-2%;
+     width:85%;
+ }
