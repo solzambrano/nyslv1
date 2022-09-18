@@ -31,11 +31,12 @@ const CACHE_NAME='v1_cache';
 
 
 // /**activacion */
-// self.addEventListener("activate",(e)=>{
-//     const cacheWhiteList=[CACHE_NAME];
-//     e.waitUntil(caches.keys().then((cachesName)=>{
-//         return Promise.all(cachesName.map(cachesName=>{
-//             return cacheWhiteList.indexOf(cachesName)===-1 && caches.delete(cacheName)
-//         }))
-//     }))
-// })
+self.addEventListener("activate",(e)=>{
+    const cacheWhiteList=[CACHE_NAME];
+    e.waitUntil(caches.keys().then((cacheNames)=>{
+        return Promise.all(cacheNames.map((cacheName)=>{
+            return cacheWhiteList.indexOf(cacheName)===-1 && caches.delete(cacheName)
+        }))
+    }).then(()=>self.clients.claim()) 
+    )//reclama el cache en caso de haber uno nuevo
+})
