@@ -40,3 +40,11 @@ self.addEventListener("activate",(e)=>{
     }).then(()=>self.clients.claim()) 
     )//reclama el cache en caso de haber uno nuevo
 })
+
+//uso de fetch lo retorna
+self.addEventListener("fetch",(e)=>{
+    console.log(e.request)
+    e.respondWith(()=>{
+         caches.match(e.request).then((res)=>res? res:fetch(e.request))
+    })
+})
